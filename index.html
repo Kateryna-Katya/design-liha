@@ -30,21 +30,111 @@
     <script type="module" crossorigin src="/design-liha/index.js"></script>
     <link rel="modulepreload" crossorigin href="/design-liha/assets/vendor-wKantkHV.js">
     <link rel="stylesheet" crossorigin href="/design-liha/assets/vendor-BMD19QWe.css">
-    <link rel="stylesheet" crossorigin href="/design-liha/assets/styles-Csg0pl7A.css">
+    <link rel="stylesheet" crossorigin href="/design-liha/assets/styles-D4I27obt.css">
   </head>
   <body>  
-    <header class="header">
-  <div class="container">
- 
+    <header class="header" id="site-header">
+  <div class="header-container container">
+    <img class="header-logo-img" src="data:image/png;base64,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" alt="Design Liha" loading="lazy"/>
+    <button type="button" class="menu-button" aria-label="menu toggle">
+      <span class="icon">
+        <svg width="28" height="19" viewBox="0 0 28 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M25.7895 15.3235C26.3572 15.3237 26.903 15.4808 27.3138 15.7623C27.7247 16.0438 27.9691 16.428 27.9964 16.8354C28.0236 17.2428 27.8317 17.6422 27.4604 17.9507C27.089 18.2592 26.5667 18.4532 26.0017 18.4926L25.7895 18.5H2.21053C1.64284 18.4998 1.09702 18.3427 0.686167 18.0612C0.275316 17.7797 0.0309296 17.3955 0.00364846 16.9881C-0.0236327 16.5807 0.168283 16.1814 0.539627 15.8728C0.910971 15.5643 1.43328 15.3703 1.99832 15.3309L2.21053 15.3235H25.7895ZM25.7895 7.91177C26.3757 7.91177 26.938 8.0791 27.3526 8.37695C27.7671 8.6748 28 9.07877 28 9.5C28 9.92123 27.7671 10.3252 27.3526 10.6231C26.938 10.9209 26.3757 11.0882 25.7895 11.0882H2.21053C1.62426 11.0882 1.062 10.9209 0.647448 10.6231C0.232894 10.3252 0 9.92123 0 9.5C0 9.07877 0.232894 8.6748 0.647448 8.37695C1.062 8.0791 1.62426 7.91177 2.21053 7.91177H25.7895ZM25.7895 0.5C26.3757 0.5 26.938 0.667332 27.3526 0.965183C27.7671 1.26304 28 1.66701 28 2.08824C28 2.50946 27.7671 2.91344 27.3526 3.21129C26.938 3.50914 26.3757 3.67647 25.7895 3.67647H2.21053C1.62426 3.67647 1.062 3.50914 0.647448 3.21129C0.232894 2.91344 0 2.50946 0 2.08824C0 1.66701 0.232894 1.26304 0.647448 0.965183C1.062 0.667332 1.62426 0.5 2.21053 0.5H25.7895Z"
+            fill="#7BCE60" />
+        </svg>
+      </span>
+    </button>
+    <nav class="nav ">
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="links" href="#Home">Home</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="#About">About</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="#Play">How to Play</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="#Games">Games</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="#Mechanics">Mechanics</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="#Design">Design Philosophy</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="#Educational">Educational Use</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="#For">For Therapists</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="#Gallery">Visual Gallery</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="#Team">Team</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="#FAQ">FAQ</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="#Contact">Contact</a>
+        </li>
+          <li class="navigation-item">
+          <a class="links" target="_blank" href="policy/privacy.pdf">Policy</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" target="_blank" href="policy/terms.pdf">Terms</a>
+        </li>
+      
+        
+        <li class="navigation-item">
+          <a class="links" target="_blank" href="policy/cookies.pdf">Cookies</a>
+          </li>
+      </ul>
+    </nav>
   </div>
 </header>
+<!-- Mobile menu -->
+<div id="modalWindow" class="modal">
+  <ul class="menu-list">
+    <li class="menu-item"><a class="menu-list-item" href="#Home">Home</a></li>
+    <li class="menu-item"><a class="menu-list-item" href="#About">About</a></li>
+    <li class="menu-item"><a class="menu-list-item" href="#Play">How to Play</a></li>
+    <li class="menu-item"><a class="menu-list-item" href="#Games">Games</a></li>
+    <li class="menu-item"><a class="menu-list-item" href="#Mechanics">Mechanics</a></li>
+    <li class="menu-item"><a class="menu-list-item" href="#Design">Design Philosophy</a></li>
+    <li class="menu-item"><a class="menu-list-item" href="#Educational">Educational Use</a></li>
+    <li class="menu-item"><a class="menu-list-item" href="#For">For Therapists</a></li>
+    <li class="menu-item"><a class="menu-list-item" href="#Gallery">Visual Gallery</a></li>
+    <li class="menu-item"><a class="menu-list-item" href="#Team">Team</a></li>
+    <li class="menu-item"><a class="menu-list-item" href="#FAQ">FAQ</a></li>
+    <li class="menu-item"><a class="menu-list-item" href="#Contact">Contact</a></li>
+  </ul>
+  <ul class="policy-list">
 
+     <li class="policy-item">
+      <a class="menu-list-item list-condition" target="_blank" href="policy/terms.pdf">Terms of Service</a>
+    </li>
+    <li class="policy-item">
+      <a class="menu-list-item list-condition" target="_blank" href="policy/privacy.pdf">Privacy Policy</a>
+    </li>
+   
+    <li class="policy-item">
+      <a class="menu-list-item list-condition" target="_blank" href="policy/cookies.pdf">Cookie Policy</a>
+    </li>
+  </ul>
+</div>
    <div class="page-wrapper">  
     <main>
       <!-- Loads the specified .html file -->
       <!-- Hero -->
-<article class="home-section">
-    <div class="container">
+<article class="home-section" id="Home">
+    <div class="container home-container">
+        <img class="mobile-img" src="data:image/png;base64,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" alt="Android status bar" loading="lazy" />
         <h1 class="home-title">Fold. Flip. Solve.</h1>
       <p class="home-text-one">DesignLiha is a visual puzzle platform where players interact with space, pattern, and logic through folding-inspired
     mechanics.</p>
@@ -54,7 +144,7 @@
     </div>
 </article>
 <!-- About the Concept -->
-<section class="about-section">
+<section class="about-section" id="About">
     <div class="container about-container">
         <h2 class="about-title">About the Concept</h2>
         <div class="about-wrapper">
@@ -73,7 +163,7 @@
     </div>
 </section>
 <!-- What We Make -->
-<section class="what-section">
+<section class="what-section" id="Play">
     <div class="container">
         <h2 class="what-title">What We Make</h2>
         <p class="what-text-one">DesignLiha develops mobile and tablet-based puzzle games that simulate folding, unfolding, mirroring, slicing, and
@@ -84,7 +174,7 @@
     </div>
 </section>
 <!-- Core Games on the Platform -->
-<section class="core-section">
+<section class="core-section" id="Games">
     <div class="container">
         <h2 class="core-title">Core Games on the Platform</h2>
         <ul class="core-list">
@@ -138,7 +228,7 @@
     </div>
 </section>
 <!-- How It Works – Mechanics in Motion -->
-<sectiob class="how-section">
+<sectiob class="how-section" id="Mechanics">
     <div class="container">
         <h2 class="how-title">How It Works – Mechanics in Motion</h2>
         <p class="how-text">All games in the DesignLiha ecosystem use intuitive, touch-based controls:</p>
@@ -173,7 +263,7 @@
     </div>
 </sectiob>
 <!-- Educational Applications -->
-<section class="educational-section">
+<section class="educational-section" id="Educational">
     <div class="container">
         <h2 class="educational-title">Educational Applications</h2>
         <picture>
@@ -209,7 +299,7 @@
     </div>
 </section>
 <!-- Therapeutic Use and Mindful Play -->
-<section class="use-section">
+<section class="use-section" id="Team">
     <div class="container">
         <h2 class="use-title">Therapeutic Use and Mindful Play</h2>
         <p class="use-text">Our games are also used in occupational <span class="use-span">therapy</span> , <span class="use-span">cognitive recovery</span>, and <span class="use-span">mindfulness training</span> .</p>
@@ -235,7 +325,7 @@
     </div>
 </section>
 <!-- Visual Gallery -->
-<section class="gallery-section">
+<section class="gallery-section" id="Gallery">
     <div class="container gallery-container">
         <h2 class="gallery-title">Visual Gallery</h2>
         <p class="gallery-text">Explore how form becomes function.</p>
@@ -314,7 +404,7 @@
     </div>
 </section>
 <!-- Design Philosophy -->
-<section class="design-section">
+<section class="design-section" id="Design">
     <div class="container">
         <h2 class="design-title">Design Philosophy</h2>
         <picture>
@@ -349,7 +439,7 @@
     </div>
 </section>
 <!-- For Collaborators -->
-<section class="collaborators-section">
+<section class="collaborators-section" id="For">
     <div class="container">
         <h2 class="collaborators-title">For Collaborators</h2>
         <p class="collaborators-text">We work with:</p>
@@ -379,7 +469,7 @@
     </div>
 </section>
 <!-- FAQ -->
-<section class="faq-section">
+<section class="faq-section" id="FAQ">
     <div class="container">
         <h2 class="faq-title">FAQ</h2>
         <ul class="faq-acc">
@@ -475,15 +565,68 @@
         </ul>
     </div>
 </section>
+<!-- Contact -->
+<section class="contact-section" id="Contact">
+    <div class="container contact-container">
+        <h2 class="contact-title">Contact</h2>
+        <p class="contact-text">Let's fold something new together.</p>
+        <picture>
+            <source srcset="/design-liha/assets/desk-Bdd2qv-7.png 1x, /design-liha/assets/desk@2x-DuWy6gik.png 2x" media="(min-width: 1439px)" />
+            <source srcset="/design-liha/assets/mob-BuBuGD9A.png 1x, /design-liha/assets/mob@2x-XMD7Xvg1.png 2x" media="(max-width: 1438px)" />
+            <img class="contact-img" src="/design-liha/assets/mob-BuBuGD9A.png" alt="Contact" loading="lazy" />
+        </picture>
+        <p class="contact-text-two">Whether you're an educator, therapist, developer, or just a curious puzzle lover—we’d love to hear from you.</p>
+        <ul class="contact-list">
+<li class="contact-item">
+    <img class="contact-item-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANGSURBVHgB7dxNbtNAGMbxd9JIIDb0COEGTSoW7NoTcISaExRWSO0i7SJFrAgHQHVvACdoWSEhVe0Rwg2yoQuU2owDDx9qxrEdj/1O8/w2qWQ3ivLPJM6MMiJEREREREREREREREREtL5MmZOHV1FvJtITKiwVmZ704+ui5xcKcngZHRkj+/bON4WqmNgyZ6Pt+GjZiblB7IjYnKVybv/cElqZfUFf3xjZHffjqeucTt4d2Lend8IYtbGv/q1HiZwuOWexw6toR36NDqrbreyOnsYXiw7ljZDnQl4kXfdzmxeEb1WemMR9pZr7GbJIaiROUzlKsysHcplmz1FiZLzooL1idV6tlg5iTU624+Nbe7XAMHfMQ3w38iR7juwH9LTsHXSlorf9eGJvjl9fRWcbiezZy4PIrO+XxizE+KYj78eDuHSEf1UOAmseprYQsHIQWLMwtYeA2oLAPQ/jLQTUHgTuWRjvIcBbEAg8TGMhwHsQCCxM4yGgsSCgPExrIaDxIKAsTOshoLUg0HIYNSGg9NRJNjE2/BL1pGZZmAanZP6b4shbMKoqW9zrJOUnaPPWQ87tesiO4/B8SbL7Q+LjZ/NXeO3siOl5GDF/R0Tfz4iYr7Im8nLJkvfFaBDvLjpQNQiEEkZLCPAWBLSG0RYCvAcBLWG0hoDGgkBbYbSHgMaDQHNhrABCQGtBwHsYX2oOAc4gTX0x7Nn0w9kD2Tu8jIIIgxC3qezbx76ZSjOa/qauPkxbIaCtqRN1YdoOAW3PZbUeRksIaH1y8bfGw2gLAVqCgPcwWkOAtiBQexjtIUBrEFg5TCghQHsQKB0mtBAQShBYGibUEBBaELgTRh7KNOQQEGoQ+BPGpHaeKeAQEHoQ6IUeAqr8PoQ8YhBlGEQZBlGGQZRhEGUYRBkGUYZBlGEQZRhEGQZRhkGUYRBlGEQZBlGGQZRxBqmy+RatzhmEO8X5kxhx7nTtfsuaySchP1Lz0XXIGSTbV9ak4vxHqiZNJX4zOP3sOp77ob7RkRf2pvBG8pRvvtV4R17lnWOkgIPLaKhs157QzH8dnG3jsezEQkHg4Gu0lXbNY6HCOtKZjAYfvgkRERERERERERERERER0VI/ARaadzdXC8XdAAAAAElFTkSuQmCC" alt="Email" loading="lazy">
+    <a class="contact-link contact-text-item" href="mailto:info@designliha.space"><span class="contact-span">Email: </span>info@designliha.space</a>
+</li>
+<li class="contact-item">
+    <img class="contact-item-img" src="/design-liha/assets/two-CDSAG2Hr.png" alt="Customer service" loading="lazy">
+    <p class="contact-text-item"><span class="contact-span">Office hours:
+        </span>Monday–Friday, 10:00–18:00 (CET)</p>
+</li>
+<li class="contact-item">
+    <img class="contact-item-img" src="/design-liha/assets/three-o9Gx7Qat.png" alt="Clock" loading="lazy">
+    <p class="contact-text-item"><span class="contact-span">Response time:
+        </span>within 48 business hours</p>
+</li>
+        </ul>
+    </div>
+</section>
     </main>
     </div>
-    <div class="background-overlay"></div> 
+    <div class="background-overlay-one"></div> 
+    <div class="background-overlay-two"></div>
     <footer class="footer">
-  <div class="container">
-  
+  <div class="container footer-container">
+    <img class="footer-logo" src="/design-liha/assets/logo-B-4i3DCp.png" alt="Design Liha">
+    <div class="footer-wrapper">
+      <div class="support-container">
+      <p class="footer-support">Support:</p>
+    <div class="support-emeil-container">
+      <img class="footer-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANGSURBVHgB7dxNbtNAGMbxd9JIIDb0COEGTSoW7NoTcISaExRWSO0i7SJFrAgHQHVvACdoWSEhVe0Rwg2yoQuU2owDDx9qxrEdj/1O8/w2qWQ3ivLPJM6MMiJEREREREREREREREREtL5MmZOHV1FvJtITKiwVmZ704+ui5xcKcngZHRkj+/bON4WqmNgyZ6Pt+GjZiblB7IjYnKVybv/cElqZfUFf3xjZHffjqeucTt4d2Lend8IYtbGv/q1HiZwuOWexw6toR36NDqrbreyOnsYXiw7ljZDnQl4kXfdzmxeEb1WemMR9pZr7GbJIaiROUzlKsysHcplmz1FiZLzooL1idV6tlg5iTU624+Nbe7XAMHfMQ3w38iR7juwH9LTsHXSlorf9eGJvjl9fRWcbiezZy4PIrO+XxizE+KYj78eDuHSEf1UOAmseprYQsHIQWLMwtYeA2oLAPQ/jLQTUHgTuWRjvIcBbEAg8TGMhwHsQCCxM4yGgsSCgPExrIaDxIKAsTOshoLUg0HIYNSGg9NRJNjE2/BL1pGZZmAanZP6b4shbMKoqW9zrJOUnaPPWQ87tesiO4/B8SbL7Q+LjZ/NXeO3siOl5GDF/R0Tfz4iYr7Im8nLJkvfFaBDvLjpQNQiEEkZLCPAWBLSG0RYCvAcBLWG0hoDGgkBbYbSHgMaDQHNhrABCQGtBwHsYX2oOAc4gTX0x7Nn0w9kD2Tu8jIIIgxC3qezbx76ZSjOa/qauPkxbIaCtqRN1YdoOAW3PZbUeRksIaH1y8bfGw2gLAVqCgPcwWkOAtiBQexjtIUBrEFg5TCghQHsQKB0mtBAQShBYGibUEBBaELgTRh7KNOQQEGoQ+BPGpHaeKeAQEHoQ6IUeAqr8PoQ8YhBlGEQZBlGGQZRhEGUYRBkGUYZBlGEQZRhEGQZRhkGUYRBlGEQZBlGGQZRxBqmy+RatzhmEO8X5kxhx7nTtfsuaySchP1Lz0XXIGSTbV9ak4vxHqiZNJX4zOP3sOp77ob7RkRf2pvBG8pRvvtV4R17lnWOkgIPLaKhs157QzH8dnG3jsezEQkHg4Gu0lXbNY6HCOtKZjAYfvgkRERERERERERERERER0VI/ARaadzdXC8XdAAAAAElFTkSuQmCC" alt="Email" loading="lazy">
+      <p class="emeil-text">Email: 
+        <a class="support-link" href="mailto:info@designliha.space"> info@designliha.space</a>
+      </p>
+    </div>
+    </div>
+      <ul class="footer-navigation">
+        <li class="footer-link">
+          <a class="footer-underline" href="./privacy.html">Privacy Policy</a>
+        </li>
+        <li class="footer-link">
+          <a class="footer-underline" href="./terms.html">Terms of Use</a>
+        </li>
+        <li class="footer-link">
+          <a class="footer-underline" href="./cookies.html">Cookies Policy</a>
+        </li>
+      </ul>
+     
+    </div>
+     <p class="footer-text">All rights reserved © 2025 designliha.space</p>
   </div>
 </footer>
-
 
   </body>
 </html>
