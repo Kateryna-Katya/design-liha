@@ -6,6 +6,16 @@
     background-size: cover;
     height: 621px;
 }
+.home-container{
+position: relative;
+}
+.mobile-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 100%;
+}
 .home-title{
     font-family: "Playfair Display", sans-serif;
         font-style: italic;
@@ -797,4 +807,88 @@ text-align: center;
     width: 846px;
     padding-bottom: 24px;
 }    
+}
+/* Contact */
+.contact-container{
+    padding-bottom: 68px;
+}
+.contact-text{
+    margin-top: 40px;
+    font-family: "Inter", sans-serif;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 24px;
+        text-align: center;
+        color: #7bce60;
+}
+.contact-img{
+    margin-top: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contact-text-two{
+    text-align: center;
+        color: #000;
+        margin-top: 24px;
+}
+.contact-list{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contact-item{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    width: 311px;
+        height: 50px;
+}
+.contact-item-img{
+    width: 25px;
+    height: 26px;
+}
+.contact-span{
+    color: #7bce60;
+}
+@media only screen and (min-width: 1439px) {
+ .contact-container{
+    padding-bottom: 120px;
+ }
+ .contact-text{
+    margin-top: 80px;
+    font-size: 48px;
+ }
+ .contact-img{
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: 60px;
+    width: 628px;
+        height: 578px;
+ }
+ .contact-text-two{
+    font-size: 28px;
+    width: 600px;
+    margin-right: 0;
+    margin-left: auto;
+    margin-top: -480px;
+ }
+ .contact-list{
+    margin-top: 60px;
+    width: 600px;
+        height: 230px;
+        margin-left: auto;
+        margin-right: 0;
+        gap: 40px;
+ }
+ .contact-item{
+    width: 600px;
+        height: 50px;
+        gap: 40px;
+ }
+ .contact-item-img{
+    width: 50px;
+    height: 50px;
+ }
+
 }

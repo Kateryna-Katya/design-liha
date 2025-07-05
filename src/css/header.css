@@ -1,0 +1,131 @@
+.header {
+    position: fixed;
+    top: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    backdrop-filter: blur(54.20000076293945px);
+        background: rgba(46, 46, 46, 0.4);
+        height: 55px;
+    width: 100%;
+    z-index: 1003;
+}
+
+.header-container {
+    padding: 6px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-logo-img{
+    width: 79px;
+        height: 43px;
+}
+.menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: inherit;
+    border: none;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.navigation-list {
+    display: none;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    width: 288px;
+    background: #2e2e2e;
+    height: auto;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 62%;
+    transform: translateX(-50%);
+    padding: 50px 54px;
+    transition: visibility 0.3s ease;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.menu-item {
+    font-weight: 500;
+    color: #f8f5f2;
+    text-align: left;
+    width: 220px;
+    cursor: pointer;
+}
+
+
+.policy-list {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 24px;
+}
+
+.policy-item {
+    font-family: "Inter", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        background: radial-gradient(54.42% 65.39% at 81.52% 45.58%, rgb(229, 225, 218) 0%, rgb(127, 125, 121) 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: left;
+}
+
+@media screen and (min-width: 1440px) {
+    .header {
+        top: 0;
+        height: 91px;
+    }
+
+    .header-container {
+        padding: 14px 80px 29px;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .navigation-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 140px;
+        gap: 40px;
+    row-gap: 8px;
+    }
+
+    .navigation-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Quicksand", sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            color:#1b1b1b;
+        cursor: pointer;
+        height: 20px;
+        padding: 4px 2px;
+        transition: border-bottom 0.3s ease, font-weight 0.3s ease;
+    }
+
+    .navigation-item:hover {
+        border-bottom: 1px solid #7bce60;
+    }
+
+    .navigation-item.active {
+        border-bottom: 1px solid #7bce60;
+    } 
+}
