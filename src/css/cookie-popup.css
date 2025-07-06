@@ -1,0 +1,98 @@
+.cookie-popup {
+    position: fixed;
+    bottom: 30px;
+    left: 48%;
+    transform: translateX(-48%);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+        background: #2e2e2e;
+    padding: 40px 32px 72px;
+    z-index: 1000;
+    width: 374px;
+    height: auto;
+    text-align: center;
+    display: none;
+}
+.popup-title{
+    font-family: "Playfair Display", sans-serif;
+        font-style: italic;
+        font-weight: 600;
+        font-size: 24px;
+        letter-spacing: 0.19em;
+        color: #f2f2f2;
+}
+.cookie-class {
+    font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        text-align: center;
+        color: #f2f2f2;
+        margin-top: 32px;
+        width: 308px;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+.cookie-buttons {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.btn-accept {
+    border: none;
+    background: radial-gradient(54.42% 65.39% at 81.52% 45.58%, #e5e1da 0%, #7f7d79 100%);
+    padding: 13px 12px;
+        width: 148px;
+        height: 50px;
+        font-family: "Inter", sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            color: #000;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.btn-decline {
+    border: none;
+    background: radial-gradient(54.42% 65.39% at 81.52% 45.58%, #e5e1da 0%, #7f7d79 100%);
+    padding: 13px 10px;
+        width: 147px;
+        height: 50px;
+        font-family: "Inter", sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            color: #000;
+    box-sizing: border-box;
+cursor: pointer;
+}
+
+@media screen and (min-width: 1439px) {
+    .cookie-popup {
+        width: 1280px;
+       padding: 80px 108px;
+    }
+.popup-title{
+    font-size: 64px;
+}
+    .cookie-class {
+        font-size: 32px;
+        width: 1062px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 34px;
+    }
+
+    .cookie-buttons {
+        gap: 24px;
+        margin-top: 80px;
+    }
+
+    .btn-accept,
+    .btn-decline {
+        font-size: 24px;
+        padding: 13px 28px;
+            width: 519px;
+            height: 60px;
+    }
+}
